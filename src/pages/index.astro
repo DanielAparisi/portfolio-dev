@@ -1,11 +1,50 @@
 ---
+import Bagde from '../components/Bagde.astro';
 import Layout from '../layouts/Layout.astro';
-
+import LinkedInIcon from '../components/icons/LinkdIn.astro'
+import GithubIcon from '../components/icons/Github.astro'
 ---
 
 <Layout title="My DevPortfolio.">
 	<main>
-		Portfolio
+		<section class=" w-full lg:w-[740px] mx-auto py-44">
+			<img 
+				class=" rounded-full w-12 h-12 mb-4" 
+				src='https://c.superprof.com/i/m/29481112/300/20240117120243/29481112.jpg' 
+				alt="Main Photo"
+			/>
+	  
+			<h1 class=" text-white text-5xl font-bold flex  flex-row gap-x-4 pb-10">
+				Hey, soy Daniel
+				 <a 
+					class=" flex justify-center items-center" 
+					href="#"
+					target="_blank" 
+					rel="noopener"
+					><Bagde> disponible para trabajar </Bagde>
+				</a>
+			</h1>
+
+			<h2 class=" text-2xl  text-wrap"> 
+				 <span> +15 años de experiencia.</span> <span class="text-yellow-200"> Dessarollador web y Lider Tecnico.</span> <span class=" text-red-200"> De Guadalajara, España.</span> <span class=" opacity-80"> Especializado esn crear Aplicaciones unicas. </span> 
+			</h2>
+			
+			<ul>
+				<li>
+					<a href="#">
+						Github
+						<GithubIcon />	
+					</a>
+					<a href="#">
+						LinkedIn
+						<LinkedInIcon />
+					</a>
+					<a href="#">
+						
+					</a>
+				</li>
+			</ul>
+		</section>	
 	</main>
 </Layout>
 
