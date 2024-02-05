@@ -1,0 +1,38 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Front End Teach Lead & Architect  − Microsoft",
+    description:
+      "Lider técnico front end Microsoft, desarrollo de aplicaciones en angular, react y vue con webpack y chunks, con servidores node, aplicación de convenciones solid y clean code, aplicación de patrones, desarrollo de extensiones de visual code, miembro del equipo Core Team Microsoft en github, desarrollo de la extensión Web Template",
+    link: "#",
+  },
+  {
+    date: "ago. 2013 - may. 2018",
+    title: "Front End Team Lead  − Grupo SM ",
+    description:
+      " Diseño de arquitectura modular bajo spa oop siempre buscando la mejor solución a cada necesidad.Promoción de formación interna, pair programming, code reviews, solid, srp... Usamos Knockout, Angular, React, Redux, HTML5, CSS3, LESS, Visual Studio .Net ASP.NET MVC 4, Web API, Razor, c#, verdaccio como gestor privado de npm .Usamos TFS para control de versiones y flujo de Código",
+  },
+  {
+    date: "feb. 2013 - ago. 2013",
+    title: " Head of IT − QUADRAM | Mobile Solutions",    
+    description:
+      "Diseñando soluciones in backend services bajo webapi (Visual Studio 2013) y procedimientos almacenados TSQL (Sql Server) para mobile apps en iOS, Android y Cordoba con mustache",
+  },
+]
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">     
+    
+    {
+        EXPERIENCE.map( experience => (
+            <li class="mb-10 ms-4">
+                <ExperienceItem {...experience} />
+         </li>
+        ))
+    }
+   
+</ol>
+

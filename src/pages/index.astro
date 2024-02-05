@@ -1,15 +1,20 @@
 ---
 import Bagde from '../components/Bagde.astro';
 import Layout from '../layouts/Layout.astro';
-import LinkedInIcon from '../components/icons/LinkdIn.astro'
+import SectionContainer from '../components/SectionContainer.astro'
 import GithubIcon from '../components/icons/Github.astro'
+import SocialPill from '../components/SocialPill.astro';
+import LinkdInIcon from '../components/icons/LinkdIn.astro';
+import MailIcon from '../components/icons/Mail.astro'
+import Experience from '../components/Experience.astro';
+import BriefCase from '../components/icons/BriefCase.astro';
 ---
 
-<Layout title="My DevPortfolio.">
+<Layout description='Contrata a midudev para crear apliacion web o movil . Dessarollador web y Teach Leader ' title="My DevPortfolio." >
 	<main>
-		<section class=" w-full lg:w-[740px] mx-auto py-44">
+		<SectionContainer class=" py-44 pb-28">
 			<img 
-				class=" rounded-full w-12 h-12 mb-4" 
+				class=" rounded-full size-12 mb-4" 
 				src='https://c.superprof.com/i/m/29481112/300/20240117120243/29481112.jpg' 
 				alt="Main Photo"
 			/>
@@ -26,25 +31,31 @@ import GithubIcon from '../components/icons/Github.astro'
 			</h1>
 
 			<h2 class=" text-2xl  text-wrap"> 
-				 <span> +15 años de experiencia.</span> <span class="text-yellow-200"> Dessarollador web y Lider Tecnico.</span> <span class=" text-red-200"> De Guadalajara, España.</span> <span class=" opacity-80"> Especializado esn crear Aplicaciones unicas. </span> 
+				 <span> +15 años de experiencia.</span> <span class="text-yellow-200"> Dessarollador web y Lider Tecnico.</span><span class=" text-red-200"> De Guadalajara, España.</span> <span class=" opacity-80"> Especializado esn crear Aplicaciones unicas. </span> 
 			</h2>
 			
-			<ul>
-				<li>
-					<a href="#">
-						Github
-						<GithubIcon />	
-					</a>
-					<a href="#">
-						LinkedIn
-						<LinkedInIcon />
-					</a>
-					<a href="#">
-						
-					</a>
-				</li>
-			</ul>
-		</section>	
+			<nav class=" flex gap-x-2 mt-8">
+				<SocialPill>	
+					<GithubIcon class="size-6" />	
+					Github
+				</SocialPill>
+				<SocialPill>	
+					<LinkdInIcon class="size-6" />	
+					Github
+				</SocialPill>
+				<SocialPill>	
+					<MailIcon class="size-6" />	
+					danidev@gmail.com
+				</SocialPill>
+			</nav>
+		</SectionContainer>
+		<SectionContainer>
+			<h2 class=" text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+				Experiencia Laboral
+				<BriefCase class=" size-8" />
+			</h2>	
+			<Experience />
+		</SectionContainer>
 	</main>
 </Layout>
 
