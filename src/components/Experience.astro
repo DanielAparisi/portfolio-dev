@@ -2,8 +2,14 @@
 import ExperienceItem from "./ExperienceItem.astro"
 
 const EXPERIENCE = [
+{
+    date: "Actualmente",
+    title: " Front End Teach Lead | Orange & Jazztel",    
+    description:
+      "Creacion de nueva arquitectura para las 2500 tiendas de orange y Jazztel, creacion de nueva arquitectura para los call center",
+},
   {
-    date: "Actualmente...",
+    date: "may.2018 - sept.2022",
     title: "Front End Teach Lead & Architect  − Microsoft",
     description:
       "Lider técnico front end Microsoft, desarrollo de aplicaciones en angular, react y vue con webpack y chunks, con servidores node, aplicación de convenciones solid y clean code, aplicación de patrones, desarrollo de extensiones de visual code, miembro del equipo Core Team Microsoft en github, desarrollo de la extensión Web Template",
@@ -21,10 +27,11 @@ const EXPERIENCE = [
     description:
       "Diseñando soluciones in backend services bajo webapi (Visual Studio 2013) y procedimientos almacenados TSQL (Sql Server) para mobile apps en iOS, Android y Cordoba con mustache",
   },
+  
 ]
 ---
 
-<ol class="relative border-s border-gray-200 dark:border-gray-700">     
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">     
     
     {
         EXPERIENCE.map( experience => (
